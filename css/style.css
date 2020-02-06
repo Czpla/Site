@@ -9,6 +9,7 @@ body {
     grid-template-areas: "header" "main" "footer";
     margin: 0px;
     min-height: 100vh;
+    overflow: hidden;
     background: linear-gradient(to right, rgb(255, 95, 109), rgb(255, 195, 113));
 }
 
@@ -82,8 +83,8 @@ header {
 
 .main {
     display: flex;
-    justify-content: center;   
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     width: 100%;
     animation-name: fadeIn;
     animation-duration: 4s;
@@ -99,8 +100,12 @@ main {
 
 footer {
     grid-area: footer;
+    animation-name: slideInUp;
+    animation-duration: 2s;
 }
 
 .footer span {
     color: #fff;
 }
+
+.opacity {}
